@@ -305,7 +305,7 @@ ol {
 }
 
 .header__logo {
-	padding: 26px 0;
+	padding: 18px 0;
 }
 
 .header__logo a {
@@ -2961,4 +2961,72 @@ ol {
         font-size: 16px !important; /* Geralmente submenus ficam melhores um pouco menores */
         font-weight: 400 !important;
     }
+}
+
+/* Container da Logo - Mantendo o padrão do seu template */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+	margin-top: 8px; /* desce levemente */
+}
+
+.logo-container img {
+    max-height: 40px; /* Tamanho que você escolheu */
+    width: auto;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* O Nome ESSENZA */
+.brand-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+    /* Ajuste de posição: se ele estiver subindo, esse top corrige */
+    position: relative;
+    top: 5px; 
+    
+    /* Efeito Dourado */
+    background: linear-gradient(135deg, #a67c52 0%, #d4b483 50%, #a67c52 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: #d4b483;
+    
+    line-height: 1;
+    display: inline-block;
+}
+
+/* Container do Footer */
+.footer-logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 15px;
+}
+
+/* Estilo do Nome no Footer */
+.footer-brand-name {
+    color: #ffffff !important; /* Branco Puro */
+    font-weight: 800 !important; /* Peso 800 */
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+
+/* Garante que a imagem do footer acompanhe o tamanho */
+.footer-logo-container img {
+    max-height: 40px;
+    width: auto;
 }
