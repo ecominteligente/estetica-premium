@@ -3006,27 +3006,26 @@ ol {
     display: inline-block;
 }
 
-/* Container do Footer */
-.footer-logo-container {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    gap: 15px;
-}
-
-/* Estilo do Nome no Footer */
-.footer-brand-name {
-    color: #ffffff !important; /* Branco Puro */
-    font-weight: 800 !important; /* Peso 800 */
-    font-family: 'Poppins', sans-serif;
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+/* Ajuste para o nome no Footer não descer ou desalinhada */
+.footer__logo {
+    margin-bottom: 20px; /* Espaço para o texto do copyright não grudar */
+    display: block;
     line-height: 1;
 }
 
-/* Garante que a imagem do footer acompanhe o tamanho */
-.footer-logo-container img {
-    max-height: 40px;
-    width: auto;
+.footer-brand-name {
+    color: #ffffff !important;
+    font-weight: 800 !important;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px; /* Tamanho ajustado */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    display: inline-block;
+    line-height: 1;
+    text-decoration: none !important;
+}
+
+/* Remove qualquer sublinhado do link no footer */
+.footer__logo a {
+    text-decoration: none !important;
 }
