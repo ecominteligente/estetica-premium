@@ -2965,14 +2965,14 @@ ol {
 
 /* Container da Logo - Mantendo o padrão do seu template */
 .logo-container {
-    display: flex;
+    display: flex !important;
     align-items: center;
-    gap: 10px;
+    gap: 0 !important;
     height: 100%;
 }
 
 .header__logo {
-    display: flex;
+    display: flex !important;
     align-items: center;
 	margin-top: 8px; /* desce levemente */
 }
